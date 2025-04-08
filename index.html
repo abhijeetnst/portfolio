@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijeet Sinha | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .with-cursor::after {
+          content: '|';
+          animation: blink 1s steps(2, start) infinite;
+          margin-left: 4px;
+        }
+      
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      </style>
+      
+  </head>
+
+  <body class="bg-black text-white h-full flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-black border-b border-gray-800 p-4">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">Abhijeet Sinha</h1>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#" class="hover:text-pink-500">Home</a>
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden bg-black border-t border-gray-800 p-4">
+      <div class="flex justify-around text-sm">
+        <a href="#" class="hover:text-pink-500">Home</a>
+        <a href="#" class="hover:text-pink-500">Portfolio</a>
+        <a href="#" class="hover:text-pink-500">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      
+      <!-- Hero Section -->
+      <section class="text-center py-12 px-4 md:px-0">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 with-cursor">Hi, I'm Abhijeet</h2>
+
+        </h2>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto text-gray-400">
+          Front-End Developer with hands-on web development experience and a keen interest in machine learning. Skilled in programming and passionate about solving real-world problems through code.
+        </p>
+      </section>
+
+        <!-- Portfolio Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Amazon Clone -->
+        <div class="bg-gradient-to-br from-yellow-400 to-orange-500 text-black p-6 rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <h3 class="text-2xl font-extrabold mb-2 drop-shadow-md">Amazon Clone</h3>
+          <p class="text-sm drop-shadow-sm">A frontend replica of Amazon’s international website with shopping cart & product pages.</p>
+        </div>
+
+        <!-- YouTube Clone -->
+        <div class="bg-gradient-to-br from-red-400 to-pink-500 text-white p-6 rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <h3 class="text-2xl font-extrabold mb-2 drop-shadow-md">YouTube Clone</h3>
+          <p class="text-sm drop-shadow-sm">Responsive YouTube interface with embedded videos and sidebar navigation.</p>
+        </div>
+
+        <!-- Calculator -->
+        <div class="bg-gradient-to-br from-green-400 to-blue-500 text-gray-900 p-6 rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <h3 class="text-2xl font-extrabold mb-2 drop-shadow-md">Calculator</h3>
+          <p class="text-sm drop-shadow-sm">A simple and responsive calculator using JavaScript and CSS Grid.</p>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="bg-gradient-to-br from-pink-400 to-orange-300 text-gray-900 p-6 rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <h3 class="text-2xl font-extrabold mb-2 drop-shadow-md">To-Do List</h3>
+          <p class="text-sm drop-shadow-sm">A task manager with local storage, priority tagging, and dynamic UI interactions.</p>
+        </div>
+
+        <!-- My Portfolio -->
+        <div class="bg-gradient-to-br from-indigo-400 to-purple-600 text-white p-6 rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105">
+          <h3 class="text-2xl font-extrabold mb-2 drop-shadow-md">My Portfolio</h3>
+          <p class="text-sm drop-shadow-sm">A personal portfolio showcasing my web projects and contact details using TailwindCSS.</p>
+        </div>
+
+      </div>
+    </section>
+      <!-- Contact Section -->
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Contact</h2>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md text-gray-300 space-y-4 text-center transition-transform duration-300 hover:scale-105">
+          <p class="text-lg">
+            📧 Email: <a href="mailto:abhijeet.2024@rishihood.edu.in" class="text-pink-400 hover:underline">Mail me!</a>
+          </p>
+          <p class="text-lg">
+            📞 Phone: <a href="tel:+91-9621759503" class="text-pink-400 hover:underline">Get on Call!</a>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 p-4 text-center text-sm">
+      <p>&copy; 2025 Abhijeet Sinha. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
